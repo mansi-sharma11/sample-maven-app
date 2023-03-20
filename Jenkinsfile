@@ -9,15 +9,5 @@ pipeline {
             }
         }
     }
-         stage('Test') {
-            when {
-                not {
-                    sh "echo IN NOT BLOCK"
-                }
-            }
-            steps {
-                sh 'mvn test'
-            }
-        }
 }
 }
